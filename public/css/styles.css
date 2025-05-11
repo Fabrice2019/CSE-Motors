@@ -1,0 +1,138 @@
+/* Mobile First */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+
+ nav, footer {
+  padding: 1rem;
+  background: #003366;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;              /* Make items horizontal */
+  justify-content: center;    /* Center the nav items */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #004080;
+  flex-wrap: wrap;            /* Wrap on very small screens if needed */
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-left: 1px solid #0059b3;
+  border-right: 1px solid #0059b3;
+}
+
+nav a:hover {
+  background-color: #0066cc;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* pushes children to far ends */
+  align-items: center; /* vertically centers them */
+  padding: 1rem;
+  
+  color:black;
+}
+
+
+main {
+  padding: 1rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+ .hero-text {
+    text-align: left;
+    max-width: 50%;
+    margin-bottom: 1em;
+  }
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+.upgrades ul,
+.reviews ul {
+  list-style: none;
+  padding: 0;
+}
+
+.upgrades li,
+.reviews li {
+  margin-bottom: 1rem;
+}
+
+.upgrades img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* Media Query for Larger Screens */
+@media screen and (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ 
+
+  .hero img {
+    max-width: 40%;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .upgrades,
+  .reviews {
+    width: 48%;
+  }
+}
